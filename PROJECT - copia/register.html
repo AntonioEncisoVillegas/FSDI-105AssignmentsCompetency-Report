@@ -1,0 +1,79 @@
+<body>
+  <main class="=container" id="register-main">
+    <h2> Register</h2>
+    <p>
+      <label for="name" class="form-label">name:*</label>
+      <input type="text" class="form-control" name="name" id="petName">
+    </p>
+    <p>
+      <label for="age">Age</label>
+      <input type="number" class="form-control" name="age" id="petAge"> 
+    </p>
+    <p>
+      <label for="gender">Gender:*</label>
+      <input type="text" class="form-control" name="gender" id="petGender">
+    </p>
+    
+        <label for="type">Type:</label>
+        <select name="type"  class="form-control" id="petType">
+            <option value="dog"> 🐕‍🦺 Dog</option>
+            <option value="cat"> 🐈 Cat</option>
+            <option value="bird"> 🦅   Bird</option>
+            <option value="other"> 🐹  Other </option>
+        </select>
+      </p>
+      <p>
+        <label for="breed">Breed:*</label>
+        <input type="text" class="form-control" name="breed" id="petBreed">
+      </p>
+      <p>
+        <label for="service">Service:*</label>
+        <select name="service" class="form-control" id="petService">
+          <option value="shower">Shower</option>
+          <option value="nails">Nails Cut</option>
+          <option value="hair"> Hair Cut</option>
+          <option value="full">Full Service</option>
+        </select>
+
+      </p>
+      <p>
+        <label for="owner">Owner's Name:*</label>
+        <input type="text" name="owner" class="form-control" id="ownerName">
+      </p>
+      <button class="btn btn-primary" id="register-btn">Regist
+        er</button>
+      <section class="container">
+        <div>
+          <p id="profits"></p>
+        </div>
+        <div class="search">
+          <input type="search" name="search" id="searchPet" class="form-control search-input">
+          <button id="search-btn" class="btn btn-warning">Search</button>
+        </div>
+        <div id="pets">
+          <!--Here are the pets -->
+        </div>
+        <!--Create the table-->
+        <table>
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Gender</th>
+              <th>Type</th>
+              <th>Breed</th>
+              <th>Service</th>
+              <th>Price</th>
+              <th>Owner Name </th>
+              <th>Contact Phone</th>
+            </tr>
+          </thead>
+        <tbody id="petTable">
+
+        </tbody>
+      </table>
+    </section>
+  </main>
+</body>
+<!--------------------------------------------------------------------->
+
